@@ -1,0 +1,77 @@
+{
+  "projects": [
+    {
+      "name": "hffah,",
+      "description": "akhka",
+      "teamSize": 12,
+      "dateOfStart": "2024-06-01T19:42",
+      "id": "f7cc"
+    },
+    {
+      "name": "hgjahhk",
+      "description": "kgahw",
+      "teamSize": 82966,
+      "dateOfStart": "2024-05-30T17:19",
+      "id": "60a2"
+    },
+    {
+      "id": "d380",
+      "name": "Trung",
+      "description": "ABC",
+      "teamSize": 12,
+      "dateOfStart": "2024-05-28T17:21"
+    },
+    {
+      "id": "dc5d",
+      "name": "TrungTrung",
+      "description": "abc",
+      "teamSize": 12,
+      "dateOfStart": "2024-05-30T17:45"
+    },
+    {
+      "id": "9c3a",
+      "name": "WMG",
+      "description": "MNSB",
+      "teamSize": 12,
+      "dateOfStart": "2024-06-07T17:58"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "user": "Trung",
+      "password": "Trunghvph31947"
+    },
+    {
+      "id": "8a02",
+      "username": "trung",
+      "password": "123456"
+    },
+    {
+      "id": "6f05",
+      "username": "trung1",
+      "password": "1234567"
+    }
+  ],
+  "task": [
+    {
+      "id": "e57e"
+    },
+    {
+      "id": "76ab",
+      "name": "Trung",
+      "description": "afaja",
+      "priority": "Low",
+      "assignedTo": "hfkhe",
+      "status": "Pending"
+    },
+    {
+      "id": "1719",
+      "name": "kjsghk",
+      "description": "ghshk",
+      "priority": "Medium",
+      "assignedTo": "fa",
+      "status": "In Progress"
+    }
+  ]
+}

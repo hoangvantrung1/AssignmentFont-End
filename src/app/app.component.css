@@ -1,0 +1,99 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f0f0f0;
+}
+
+.content {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left-side {
+  height: 50px;
+  background-color: #333;
+  color: white;
+  width: 1450px;
+  display: flexbox;
+  align-items: center;
+}
+
+.nav {
+  height: 300px;
+  padding-left: 10px;
+  width: 1450px;
+  text-align: center;
+}
+
+.nav li {
+  margin-bottom: 10px;
+  display: inline-block;
+
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.nav a:hover {
+  background-color: #555;
+}
+
+.divider {
+  width: 2px;
+  background-color: #ccc;
+}
+
+.main-content {
+  flex: 1;
+  padding: 200px;
+}
+.home {
+  /* Example styles for the home page */
+  background-color: #fff;
+  color: #333;
+}
+
+.project {
+  /* Example styles for the project page */
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.create-project {
+  /* Example styles for the create project page */
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.create-task {
+  /* Example styles for the create task page */
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+.login {
+  /* Example styles for the login page */
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+.register {
+  /* Example styles for the register page */
+  background-color: #fafafa;
+  color: #333;
+}

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="list.component.css">
+<table class="table table-striped container">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>Date of start</th>
+        <th>Team size</th>
+        <th>Acction</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(p of list; track p.name) {
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.name }}</td>
+            <td>{{ p.dateOfStart }}</td>
+            <td>{{p.teamSize}}</td>
+            <td>
+                <!-- điều hướng sang trang chi tiết -->
+                <a class="btn btn-info" [routerLink]="['/detail',p.id]">Detail</a>
+                <a class="btn btn-warning mx-2" [routerLink]="['/edit',p.id]">Edit</a>
+                <a class="btn btn-danger" (click)="onDelete(p.id)">Delete</a>
+            </td>
+        </tr>
+      }
+    </tbody>
+</table>

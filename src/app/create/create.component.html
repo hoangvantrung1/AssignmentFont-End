@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Thêm mới Project</h1>
+    <!-- 
+        * khai báo tên form: #tenForm="ngForm"
+        * bắt sự kiện submit: (ngSubmit)=tenHam(tenForm.value)
+        => tenFrom và tenHam không được trùng nhau -->
+    <form #create="ngForm" (ngSubmit)="onCreate(create.value)">
+        <div>
+            <label for="" class="form-label">ID</label>
+            <input type="text" class="form-control" name="name" [(ngModel)]="project.name" required>
+            <!-- khai báo name="" và ngModel cho các ô input -->
+        </div>
+        <div>
+            <label for="" class="form-label">Project Name</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]="project.description" required>
+            <!-- khai báo name="" và ngModel cho các ô input -->
+        </div>
+        <div>
+            <label for="" class="form-label">TeamSize</label>
+            <input type="number" class="form-control" name="teamSize" ngModel>
+            <!-- khai báo name="" và ngModel cho các ô input -->
+    </div>
+    <div>
+        <label for="dateOfStart">Date of Start</label>
+        <input type="datetime-local" id="dateOfStart" [(ngModel)]="project.dateOfStart" name="dateOfStart">
+      </div>
+      
+        <input type="submit" class="btn btn-success mt-2 mx-auto d-block"  value="Thêm mới">
+    </form>
+</div>

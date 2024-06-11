@@ -1,0 +1,61 @@
+<form class="container mt-4" (ngSubmit)="onCreateTask()">
+    <div class="mb-3">
+      <label for="name" class="form-label">TaskName:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="task.name" class="form-control" required>
+    </div>
+  
+    <div class="mb-3">
+      <label for="description" class="form-label">Description:</label>
+      <textarea id="description" name="description" [(ngModel)]="task.description" class="form-control" required></textarea>
+    </div>
+  
+    <div class="form-container">
+        <div class="mb-3">
+            <label for="priority" class="form-label">Priority:</label>
+            <select id="priority" name="priority" [(ngModel)]="task.priority" class="form-select" required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+    
+        <div class="mb-3">
+            <label for="assignedTo" class="form-label">Assigned To:</label>
+            <input type="text" id="assignedTo" name="assignedTo" [(ngModel)]="task.assignedTo" class="form-control" required>
+        </div>
+    
+        <div class="mb-3">
+            <label for="status" class="form-label">Status:</label>
+            <select id="status" name="status" [(ngModel)]="task.status" class="form-select" required>
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-success mt-2 mx-auto d-block">Create Task</button>
+  </form>
+<style>
+    .form-container {
+    display: grid;
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px;
+}
+
+
+.form-container > * {
+    grid-column: 1 / span 2; 
+}
+
+
+.form-container > .mb-3 {
+    grid-column: 1; 
+}
+
+.form-container > .mb-3:nth-child(n + 3) {
+    grid-column: 2; 
+}
+
+</style>
+  
